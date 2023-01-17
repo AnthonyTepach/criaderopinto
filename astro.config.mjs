@@ -9,6 +9,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://anthonytepach.github.io',
-  base: '/my-repo',
+  base: '/criaderopinto',
   integrations: [tailwind(), sitemap()]
 });
