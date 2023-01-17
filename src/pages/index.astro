@@ -1,0 +1,231 @@
+---
+import Card from "../components/Card.astro";
+import Feature from "../components/Feature.astro";
+import ImgGalery from "../components/ImgGalery.astro";
+import Section from "../components/Section.astro";
+import Layout from "../Layouts/Layout.astro";
+---
+
+<Layout title="Criadero Pinto | Venta de Cachorros">
+  <section
+    class="overflow-hidden bg-[url(https://rare-gallery.com/uploads/posts/874357-French-Bulldog-Closeup-Dogs-Head-Glance-Black-background.jpg)] bg-cover bg-center bg-no-repeat"
+  >
+    <div class="bg-zinc-900/25 p-8 md:p-12 lg:px-16 lg:py-80">
+      <div class="max-w-lg text-center sm:text-left">
+        <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+          Cachorros de Bulldog Francés y Shih Tzu disponibles
+        </h2>
+
+        <p
+          class="hidden max-w-md text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
+        >
+          No sabemos exactamente qué es la felicidad, pero sabemos que un perro
+          puede ser una parte importante de ella.
+        </p>
+
+        <div class="mt-4 sm:mt-8">
+          <a
+            href="#"
+            class="inline-flex items-center rounded-full bg-amber-500 px-8 py-3 text-white shadow-lg transition hover:bg-amber-400 focus:outline-none focus:ring"
+          >
+            <span class="text-sm font-medium">Encuentralo aquí</span>
+
+            <svg
+              class="ml-3 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+        <div class="relative z-10 lg:py-16">
+          <div class="relative h-64 sm:h-80 lg:h-full">
+            <img
+              alt="Doberman"
+              src="https://images.pexels.com/photos/11497213/pexels-photo-11497213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="absolute inset-0 h-full w-full object-cover rounded-lg"
+            />
+          </div>
+        </div>
+
+        <div class="relative flex items-center bg-zinc-100">
+          <span
+            class="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100"
+          ></span>
+
+          <div class="p-8 sm:p-16 lg:p-24">
+            <h2 class="text-2xl font-bold sm:text-3xl">
+              A nosotros también nos encantan los perros.
+            </h2>
+
+            <p class="mt-4 text-gray-600">
+              En <strong>Criadero Pinto</strong>, nuestro amor por los perros es incondicional.
+              Nuestro compromiso con la <strong>crianza responsable</strong> y el cuidado de
+              nuestros cachorros nos ha permitido criar perros de alta calidad.
+              Pero lo más importante para nosotros es garantizar la salud y el
+              bienestar de nuestros cachorros y la satisfacción de sus dueños.
+            </p>
+
+            <a
+              href="#"
+              class="mt-8 inline-block rounded-full border border-amber-600 bg-amber-500 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-amber-500 focus:outline-none focus:ring active:text-amber-500"
+            >
+              Cachorros disponibles
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Section clase="bg-zinc-900 text-white" title="Criadero Pinto">
+    <Feature
+      title="Confianza"
+      body="Brindamos a nuestros clientes la tranquilidad y confianza de que están adquiriendo un perro de raza pura y de alta calidad. A través de nuestra crianza responsable y el seguimiento de las líneas de sangre, garantizamos la pureza de raza de nuestros perros."
+      href="#"
+    />
+    <Feature
+      title="Objetivo"
+      body="Nuestro objetivo es ser líderes en la crianza responsable de razas puras y lograr una reproducción de perros de alta calidad. Con el objetivo de ser reconocidos como un símbolo de excelencia en la crianza de perros, brindamos a nuestros clientes perros sanos y equilibrados."
+      href="#"
+    />
+    <Feature
+      title="Responzabilidad"
+      body="Trabajamos arduamente para encontrar el hogar perfecto para cada uno de nuestros cachorros únicos y especiales. Nos aseguramos de que nuestros cachorros vayan a hogares responsables y adecuados."
+      href="#"
+    />
+  </Section>
+
+  <Section clase="text-zinc-700" title="Razas Disponibles">
+    <Card
+      title="Doberman Europeo"
+      body="Es un perro elegante, atlético, de talla grande, de porte poderoso y musculoso. El dóberman ha resultado ser un perro de excelentes capacidades de trabajo y compañía, con un alto instinto de protección, pero muy equilibrado."
+      href="#"
+      img="https://images.pexels.com/photos/7483192/pexels-photo-7483192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    />
+    <Card
+      title="Shih Tzu"
+      body="Es un perro de talla pequeña, es una de las razas de compañía más sociables, juguetones y extremadamente cariñosos, eso sumado a su hermoso pelaje y dulce apariencia lo ha convertido en una de las mascotas más populares."
+      href="#"
+      img="https://images.unsplash.com/photo-1527526029430-319f10814151?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    />
+    <Card
+      title="Bulldog Francés"
+      body="Es considerado un moloso de talla pequeña, nuestros pequeños amigos son unos excelentes perros de compañía, son cariñosos, juguetones y muy simpáticos, por eso son ideales para el trato con los niños."
+      href="#"
+      img="https://images.unsplash.com/photo-1621262331542-df0768a47e2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80"
+    />
+  </Section>
+
+  <section>
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+        <div
+          class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
+        >
+          <img
+            alt="bulldog"
+            src="https://images.unsplash.com/photo-1587893143314-972249555d65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=654&q=80"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+
+        <div class="lg:py-24">
+          <h2 class="text-3xl font-bold sm:text-4xl">
+            ¡Te presentamos a tu nuevo compañero de vida!
+          </h2>
+
+          <p class="mt-4 text-zinc-700">
+            ¿Sabías que tu cuerpo produce una hormona llamada oxitocina cada vez
+            que tu cachorro te recibe con alegría?
+          </p>
+          <p class="mt-4 text-zinc-700">
+            Esta hormona, también conocida como la hormona del amor, nos ayuda a
+            sentir emociones positivas y a establecer vínculos afectivos más
+            profundos.
+          </p>
+          <p class="mt-4 text-zinc-700">
+            ¡Mantener una relación cercana y cariñosa con nuestras mascotas
+            puede mejorar nuestra salud y bienestar de muchas maneras!
+          </p>
+          <a
+            href="#"
+            class="mt-8 inline-flex items-center rounded-full border border-amber-500 bg-amber-500 px-8 py-3 text-white hover:bg-transparent hover:text-amber-400 focus:outline-none focus:ring active:text-amber-500"
+          >
+            <span class="text-sm font-medium"> Saber más</span>
+
+            <svg
+              class="ml-3 h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative bg-zinc-800 px-4 py-3 pr-14 text-white">
+    <p class="text-left text-sm font-medium sm:text-center">
+      ¡Te invitamos a seguirnos en nuestras redes!
+    </p>
+  </div>
+
+  <section>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+      <header class="text-center">
+        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
+          Nuestros cachorros y sus nuevas Familias
+        </h2>
+
+        <p class="max-w-md mx-auto mt-4 text-gray-500">
+          Nuestra principal misión es hacer que estos cachorros además de ser
+          criados con amor, formen parte de excelentes familias.
+        </p>
+      </header>
+
+      <ul class="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
+        <ImgGalery
+          alt=""
+          href=""
+          clase=""
+          img="https://criaderopinto.com/wp-content/uploads/2022/07/b5b30eed-ae23-4820-b84d-e7106e515301-768x1024.jpg"
+        />
+        <ImgGalery
+          alt=""
+          href=""
+          clase=""
+          img="https://criaderopinto.com/wp-content/uploads/2022/07/IMG-2266.jpg"
+        />
+        <ImgGalery
+          clase="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1"
+          alt=""
+          href=""
+          img="https://criaderopinto.com/wp-content/uploads/2022/07/46b6dfc5-1d65-465f-b98a-e300eca2a43b.jpg"
+        />
+      </ul>
+    </div>
+  </section>
+</Layout>

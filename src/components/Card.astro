@@ -1,0 +1,45 @@
+---
+export interface Props {
+	title: string;
+    img: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body,img } = Astro.props;
+---
+
+<article class="overflow-hidden rounded-lg border border-gray-100 shadow-sm">
+    <img
+      alt={title}
+      src={img}
+      class="h-72 w-full object-cover"
+    />
+  
+    <div class="p-4 sm:p-6">
+      <a href="#">
+        <h3 class="text-lg font-medium text-gray-900">
+         {title}
+        </h3>
+      </a>
+  
+      <p class="mt-2 text-sm leading-relaxed text-gray-500 line-clamp-3">
+       {body}
+      </p>
+  
+      <a
+        href={href}
+        class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-amber-500"
+      >
+        Leer más
+  
+        <span
+          aria-hidden="true"
+          class="block transition group-hover:translate-x-0.5"
+        >
+          &rarr;
+        </span>
+      </a>
+    </div>
+  </article>
+  
