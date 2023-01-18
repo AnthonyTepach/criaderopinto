@@ -1,0 +1,29 @@
+---
+export interface Props {
+	title: string;
+    href: string;
+}
+
+const { title, href} = Astro.props;
+---
+<br>
+<a
+  href={href}
+  class="transition ease-in-out delay-150 inline-flex items-center rounded-full bg-amber-500 px-8 py-3 text-white shadow-lg  hover:bg-amber-400 hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring"
+>
+  <span class="text-sm font-medium">{title}</span>
+
+  <svg
+    class="ml-3 h-5 w-5"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+  </svg>
+</a>
