@@ -2,18 +2,20 @@
 import Card from "../components/Card.astro";
 import Feature from "../components/Feature.astro";
 import ImgGalery from "../components/ImgGalery.astro";
+import Navbar from "../components/Navbar.astro";
 import Section from "../components/Section.astro";
 import Layout from "../Layouts/Layout.astro";
 
-
-Astro.response.headers.set('Cache-Control', 'max-age=604800');
+Astro.response.headers.set("Cache-Control", "max-age=604800");
 ---
 
 <Layout title="Criadero Pinto | Venta de Cachorros">
   <section
     class="overflow-hidden bg-[url(https://dl.dropbox.com/s/75ug13nigvm1ud5/874357-French-Bulldog-Closeup-Dogs-Head-Glance-Black-background.webp)] bg-cover bg-center bg-no-repeat"
   >
+  <Navbar/>
     <div class="bg-zinc-900/25 p-8 md:p-12 lg:px-16 lg:py-80">
+      
       <div class="max-w-lg text-center sm:text-left">
         <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
           Cachorros de Bulldog Francés y Shih Tzu disponibles
@@ -76,11 +78,13 @@ Astro.response.headers.set('Cache-Control', 'max-age=604800');
             </h2>
 
             <p class="mt-4 text-gray-600">
-              En <strong>Criadero Pinto</strong>, nuestro amor por los perros es incondicional.
-              Nuestro compromiso con la <strong>crianza responsable</strong> y el cuidado de
-              nuestros cachorros nos ha permitido criar perros de alta calidad.
-              Pero lo más importante para nosotros es garantizar la salud y el
-              bienestar de nuestros cachorros y la satisfacción de sus dueños.
+              En <strong>Criadero Pinto</strong>, nuestro amor por los perros es
+              incondicional. Nuestro compromiso con la <strong
+                >crianza responsable</strong
+              > y el cuidado de nuestros cachorros nos ha permitido criar perros
+              de alta calidad. Pero lo más importante para nosotros es garantizar
+              la salud y el bienestar de nuestros cachorros y la satisfacción de
+              sus dueños.
             </p>
 
             <a
