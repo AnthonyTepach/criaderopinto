@@ -4,6 +4,9 @@ import Feature from "../components/Feature.astro";
 import ImgGalery from "../components/ImgGalery.astro";
 import Section from "../components/Section.astro";
 import Layout from "../Layouts/Layout.astro";
+
+
+Astro.response.headers.set('Cache-Control', 'max-age=604800');
 ---
 
 <Layout title="Criadero Pinto | Venta de Cachorros">
