@@ -1,0 +1,32 @@
+---
+export interface Props {
+  img: string;
+  gender: string;
+  race: string;
+  contact: string;
+}
+
+const { contact, img,gender ,race} = Astro.props;
+---
+
+<li>
+  <a href={contact} class="block overflow-hidden group">
+    <img
+      src={img}
+      alt={race+'-'+gender}
+      class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+    />
+
+    <div class="relative pt-3 bg-white">
+      <h3
+        class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+      >
+        {gender}
+      </h3>
+
+      <p class="mt-2">
+        <span class="sr-only">{race}</span>
+      </p>
+    </div>
+  </a>
+</li>

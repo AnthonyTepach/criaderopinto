@@ -1,140 +1,40 @@
 ---
+import Dog from "../components/Dog.astro";
+import ListPerDog from "../components/ListPerDog.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../Layouts/Layout.astro";
-
 ---
 
 <Layout title="Criadero Pinto | Cachorros Disponibles">
-<Navbar color="bg-zinc-900"/>
+  <Navbar color="bg-zinc-900" />
 
-
-<section class="bg-gray-50">
-    <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-lg text-center">
-        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
-            ¡Encuentra al mejor compañero en Criadero Pinto!
-        </h2>
-  
-        <p class="hidden text-gray-500 sm:mt-4 sm:block">
-            Los cachorros Bulldogs Francés y Shih Tzu están esperando a ser parte de tu familia, tenemos cachorros Bulldogs Francés desde $16,000MXN y cachorros Shih Tzu desde $12,000MXN.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-
-  <section>
-    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
-      <header>
-        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
-          Bulldog Francés
-        </h2>
-  
-        <p class="max-w-md mt-4 text-gray-500">
-            Es considerado un moloso de talla pequeña, nuestros pequeños amigos son unos excelentes perros de compañía, son cariñosos, juguetones y muy simpáticos, por eso son ideales para el trato con los niños. 
-        </p>
-      </header>
-
-  
-      <ul class="grid gap-4 mt-4 sm:grid-cols-2 lg:grid-cols-4">
-        <li>
-          <a href="#" class="block overflow-hidden group">
-            <img
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              alt=""
-              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-            />
-  
-            <div class="relative pt-3 bg-white">
-              <h3
-                class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
-              >
-                Macho
-              </h3>
-  
-              <p class="mt-2">
-                <span class="sr-only"> Regular Price </span>
-  
-                <span class="tracking-wider text-gray-900"> £24.00 GBP </span>
-              </p>
-            </div>
-          </a>
-        </li>
-  
-        <li>
-          <a href="#" class="block overflow-hidden group">
-            <img
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              alt=""
-              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-            />
-  
-            <div class="relative pt-3 bg-white">
-              <h3
-                class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
-              >
-                Basic Tee
-              </h3>
-  
-              <p class="mt-2">
-                <span class="sr-only"> Regular Price </span>
-  
-                <span class="tracking-wider text-gray-900"> £24.00 GBP </span>
-              </p>
-            </div>
-          </a>
-        </li>
-  
-        <li>
-          <a href="#" class="block overflow-hidden group">
-            <img
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              alt=""
-              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-            />
-  
-            <div class="relative pt-3 bg-white">
-              <h3
-                class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
-              >
-                Basic Tee
-              </h3>
-  
-              <p class="mt-2">
-                <span class="sr-only"> Regular Price </span>
-  
-                <span class="tracking-wider text-gray-900"> £24.00 GBP </span>
-              </p>
-            </div>
-          </a>
-        </li>
-  
-        <li>
-          <a href="#" class="block overflow-hidden group">
-            <img
-              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              alt=""
-              class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
-            />
-  
-            <div class="relative pt-3 bg-white">
-              <h3
-                class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
-              >
-                Basic Tee
-              </h3>
-  
-              <p class="mt-2">
-                <span class="sr-only"> Regular Price </span>
-  
-                <span class="tracking-wider text-gray-900"> £24.00 GBP </span>
-              </p>
-            </div>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </section>
-  
+  <ListPerDog
+    race="Bulldog Francés"
+    desc="Es considerado un moloso de talla pequeña, nuestros pequeños amigos son unos excelentes perros de compañía, son cariñosos, juguetones y muy simpáticos, por eso son ideales para el trato con los niños. "
+  >
+    <Dog
+      gender="Macho"
+      race="Bulldog Francés"
+      contact="https://bit.ly/3WBj8FE"
+      img="https://dl.dropbox.com/s/n0ewgtthi5n089g/image_50441729%20%281%29.JPG?dl=0"
+    />
+    <Dog
+      gender="Macho"
+      race="Bulldog Francés"
+      contact="https://bit.ly/3WBj8FE"
+      img="https://dl.dropbox.com/s/ui6d734pdv9j3ad/image_50415617%20%281%29.JPG?dl=0"
+    />
+    <Dog
+      gender="Macho"
+      race="Bulldog Francés"
+      contact="https://bit.ly/3WBj8FE"
+      img="https://dl.dropbox.com/s/dj086v00axbjh9w/image_50417409%20%281%29.JPG?dl=0"
+    />
+    <Dog
+      gender="Macho"
+      race="Bulldog Francés"
+      contact="https://bit.ly/3WBj8FE"
+      img="https://dl.dropbox.com/s/n0ewgtthi5n089g/image_50441729%20%281%29.JPG?dl=0"
+    />
+  </ListPerDog>
 </Layout>
